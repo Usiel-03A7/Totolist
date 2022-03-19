@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh ;
-    background: var(--dark);
+    background: linear-gradient(to right,#6b7280,#6f1c91 );
     color: #fff;
 }
 header {
@@ -43,7 +43,7 @@ input, button {
 }
 #task-input {
     flex: 1 1 0%;
-    background-color: var(--darker);
+    background-color: #291555;
     padding: 1rem;
     border-radius: 1rem;
     margin-right: 1rem,;
@@ -57,7 +57,7 @@ input, button {
     color: var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink),var(--purple));
+    background-image: linear-gradient(to right, var(--pink),var(--darkes));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -88,7 +88,10 @@ main {
 #tasks .task {
     display: flex;
     justify-content: space-between;
-    background-color: var(--darkes);
+    background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32ox 0 rgba(0,0,0,0.37);
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -106,7 +109,7 @@ main {
 .task .actions button {
     cursor: pointer;
     margin:  0 0.5rem;
-    font-size: 1.125r em;
+    font-size: 1.125rem;
     font-weight: 700;
     text-transform: uppercase;
     transition: 0.4s ;
